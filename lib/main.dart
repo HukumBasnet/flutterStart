@@ -11,22 +11,32 @@ class Home extends StatelessWidget {
         centerTitle: true,
         backgroundColor: Colors.pink[600],
       ),
-      body: Column(
+      body: Row(
         children: <Widget>[
-          Container(
-            child: Text('one'),
-            color: Colors.cyan,
-            padding: EdgeInsets.all(20.0),
+          Expanded(child: Image.asset('assests/space-2.jpg')),
+          Expanded(
+            flex: 3,
+            child: Container(
+              child: Text('1'),
+              padding: EdgeInsets.all(30.0),
+              color: Colors.cyan,
+            ),
           ),
-          Container(
-            padding: EdgeInsets.all(30.0),
-            color: Colors.pinkAccent,
-            child: Text('two'),
+          Expanded(
+            flex: 2,
+            child: Container(
+              child: Text('2'),
+              color: Colors.pinkAccent,
+              padding: EdgeInsets.all(30.0),
+            ),
           ),
-          Container(
-            child: Text('three'),
-            color: Colors.amber,
-            padding: EdgeInsets.all(40.0),
+          Expanded(
+            flex: 1,
+            child: Container(
+              child: Text('3'),
+              color: Colors.amber,
+              padding: EdgeInsets.all(30.0),
+            ),
           )
         ],
       ),
