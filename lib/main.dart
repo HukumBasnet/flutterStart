@@ -11,8 +11,9 @@ class Home extends StatelessWidget {
         centerTitle: true,
         backgroundColor: Colors.pink[600],
       ),
-      body: Center(
-        child: Image.asset('assests/space-3.jpg'),
+      body: Padding(
+        padding: EdgeInsets.all(20.0),
+        child: Text('hello, again'),
       ),
       floatingActionButton: FloatingActionButton(
         backgroundColor: Colors.red[600],
