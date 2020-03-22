@@ -12,13 +12,7 @@ class Home extends StatelessWidget {
         backgroundColor: Colors.pink[600],
       ),
       body: Center(
-        child: Text('hello, latoo',
-            style: TextStyle(
-                fontSize: 20.0,
-                fontWeight: FontWeight.bold,
-                letterSpacing: 2.0,
-                color: Colors.grey[600],
-                fontFamily: 'IndieFlower')),
+        child: Image.asset('assests/space-3.jpg'),
       ),
       floatingActionButton: FloatingActionButton(
         backgroundColor: Colors.red[600],
